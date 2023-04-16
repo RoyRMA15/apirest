@@ -1,0 +1,281 @@
+{
+	"id": "0b058ede-06c3-4f2d-876a-891b94406734",
+	"name": "RES API Collection",
+	"timestamp": "2023-04-16T04:37:12.615Z",
+	"collection_id": "26920929-9e6a84fb-c706-46ed-9d36-f70f879ff297",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 15,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-04-16T04:37:10.967Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "972c0d9a-aa87-485c-beb9-bfba80a5e2e3",
+			"name": "GET Users",
+			"url": "http://localhost:3000/users",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 20ms": true,
+				"There are more than 10 users": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 20ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"There are more than 10 users": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 20ms": true,
+					"There are more than 10 users": true
+				}
+			]
+		},
+		{
+			"id": "097e73a6-c805-49f4-af18-1f89aef42213",
+			"name": "POST a new user with id 11",
+			"url": "http://localhost:3000/users",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Content-Type is present": true,
+				"Successful POST request": true,
+				"Data is correct": true
+			},
+			"testPassFailCounts": {
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Content-Type is present": true,
+					"Successful POST request": true,
+					"Data is correct": true
+				}
+			]
+		},
+		{
+			"id": "eea0beca-c762-4872-be5f-52e95c0c117d",
+			"name": "PUT data to an user",
+			"url": "http://localhost:3000/users/1",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string = Jason": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string = Jason": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string = Jason": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "3305534b-0111-4b44-9215-923ca31d6223",
+			"name": "PATCH user id 8",
+			"url": "http://localhost:3000/users/8",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Content-Type is present": true,
+				"Status code is 200": true,
+				"City must stay as Aliyaview": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"City must stay as Aliyaview": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Content-Type is present": true,
+					"Status code is 200": true,
+					"City must stay as Aliyaview": true
+				}
+			]
+		},
+		{
+			"id": "f32642d6-88a1-42b7-87e1-567d139c1497",
+			"name": "DELETE user id 9",
+			"url": "http://localhost:3000/users/9",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 = OK": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 = OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Status code is 200 = OK": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "238e6004-0563-4ad7-832f-c80c4bca6f6d",
+			"name": "REQUEST TEST",
+			"url": "http://localhost:3000/users/9",
+			"time": 33,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				33
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d0e0a46f-e578-4203-884f-f6396c4961e9",
+			"name": "Repost id 9 user",
+			"url": "http://localhost:3000/users",
+			"time": 34,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				34
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 221,
+	"collection": {
+		"requests": [
+			{
+				"id": "972c0d9a-aa87-485c-beb9-bfba80a5e2e3",
+				"method": "GET"
+			},
+			{
+				"id": "097e73a6-c805-49f4-af18-1f89aef42213",
+				"method": "POST"
+			},
+			{
+				"id": "eea0beca-c762-4872-be5f-52e95c0c117d",
+				"method": "PUT"
+			},
+			{
+				"id": "3305534b-0111-4b44-9215-923ca31d6223",
+				"method": "PATCH"
+			},
+			{
+				"id": "f32642d6-88a1-42b7-87e1-567d139c1497",
+				"method": "DELETE"
+			},
+			{
+				"id": "238e6004-0563-4ad7-832f-c80c4bca6f6d",
+				"method": "GET"
+			},
+			{
+				"id": "d0e0a46f-e578-4203-884f-f6396c4961e9",
+				"method": "POST"
+			}
+		]
+	}
+}

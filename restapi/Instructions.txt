@@ -1,0 +1,31 @@
+Welcome to the documentation for my API. This API retrieves data from JSONPlaceholder and saves it to a local db.json file using json-server.
+
+Running the API: To start the API, run the following command in your terminal: node server.js
+
+This will start the API server on http://localhost:3000.
+
+Installed packages:
+
+- axios@1.3.5
+
+- json-server@0.17.3
+
+- swagger-jsdoc@6.2.8
+
+- swagger-ui-express@4.6.2
+
+Endpoints:
+
+- GET /posts Retrieves a list of posts from JSONPlaceholder.
+
+- GET /posts/:id Retrieves a specific post by ID from JSONPlaceholder.
+
+- POST /posts Creates a new post on JSONPlaceholder.
+
+- PUT /posts/:id Updates a specific post by ID on JSONPlaceholder.
+
+- DELETE /posts/:id Deletes a specific post by ID from JSONPlaceholder.
+
+POSTMAN COLLECTION: U can find the Postman Collection and the Postman API test summary in the directory folder, open the Collection with Postman and run the different endpoints, along with their HTTP methods (GET, POST, PUT, PATCH, DELETE), each endpoint has its own automatic test.
+
+Swagger Documentation: This API also has Swagger documentation, which you can access at http://localhost:3000/api-docs.
